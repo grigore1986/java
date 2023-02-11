@@ -18,20 +18,20 @@ public class Convertor {
     }
 
     public void Converted() {
-        boolean bo = Boolean.parseBoolean(One);
-        byte by = Byte.parseByte(Two);
-        short s = Short.parseShort(Thre);
-        int i = Integer.parseInt(Four);
-        long l = Long.parseLong(Five);
-        double d = Double.parseDouble(Six);
-        float f = Float.parseFloat(Seven);
-        System.out.println(bo);
-        System.out.println(by);
-        System.out.println(s);
-        System.out.println(i);
-        System.out.println(l);
-        System.out.println(d);
-        System.out.println(f);
+        boolean one = Boolean.parseBoolean(One);
+        byte two = Byte.parseByte(Two);
+        short thre = Short.parseShort(Thre);
+        int four = Integer.parseInt(Four);
+        long five = Long.parseLong(Five);
+        double six = Double.parseDouble(Six);
+        float seven = Float.parseFloat(Seven);
+        System.out.println(one);
+        System.out.println(two);
+        System.out.println(thre);
+        System.out.println(four);
+        System.out.println(five);
+        System.out.println(six);
+        System.out.println(seven);
     }
 
     @Override
