@@ -23,14 +23,14 @@ public class SumamedieArray {
             for (int j = 0; j < array2[i].length; j++) {
                 sumaArray2 += array2[i][j];
                 if (array2[i][j] % 2 == 0) {
-                    inparArray2++;
-                } else {
                     nparArray2++;
+                } else {
+                    inparArray2++;
                 }
             }
         }
         // calcularea mediei
-        mediaArray2 = (double) sumaArray2 / array2.length;
+        mediaArray2 = (double) sumaArray2 /(array2.length*array2[0].length);
 
         // Afisarea Array1
         System.out.println("Array1: ");
