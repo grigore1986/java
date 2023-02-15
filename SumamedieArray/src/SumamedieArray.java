@@ -30,7 +30,7 @@ public class SumamedieArray {
             }
         }
         // calcularea mediei
-        mediaArray2 = (double) sumaArray2 /(array2.length*array2[0].length);
+        mediaArray2 = (double) sumaArray2 /(array2.length* array2[0].length);
 
         // Afisarea Array1
         System.out.println("Array1: ");
