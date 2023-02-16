@@ -1,18 +1,19 @@
-public class Oficce {
-    public int[] getNumarDeangajati() {
-        return numarDeangajati;
+package oficce;
+
+class Office {
+    private int numarDeAngajati;
+    private int sumaSalarii;
+    private String descriere;
+    private String nume;
+
+    private Angajat[] angajati = new Angajat[300];
+
+    public int getNumarDeAngajati() {
+        return numarDeAngajati;
     }
 
-    public void setNumarDeangajati(int[] numarDeangajati) {
-        this.numarDeangajati = numarDeangajati;
-    }
-
-    public int getSalariuMediu() {
-        return salariuMediu;
-    }
-
-    public void setSalariuMediu(int salariuMediu) {
-        this.salariuMediu = salariuMediu;
+    public void setNumarDeAngajati(int numarDeAngajati) {
+        this.numarDeAngajati = numarDeAngajati;
     }
 
     public String getDescriere() {
@@ -31,9 +32,23 @@ public class Oficce {
         this.nume = nume;
     }
 
-    private int numarDeangajati[];
-    private int salariuMediu;
-    private  String descriere;
-    private String nume;
+    public int getSumaSalarii() {
+        for (int i = 0; i < numarDeAngajati; i++) {
+            sumaSalarii = sumaSalarii + angajati[i].getSalariu();
+        }
 
+        return sumaSalarii;
+    }
+
+    public void setSumaSalarii(int sumaSalarii) {
+        this.sumaSalarii = sumaSalarii;
+    }
+
+    public Angajat[] getAngajati() {
+        return angajati;
+    }
+
+    public void setAngajati(Angajat[] angajati) {
+        this.angajati = angajati;
+    }
 }
