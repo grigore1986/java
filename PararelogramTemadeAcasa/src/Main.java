@@ -1,7 +1,7 @@
 public class Main {
     // Metoda main pentru a crea și afișa obiecte de tipul Parallelogram
     public static void main(String[] args) {
-        // Crearea unui obiect de tip dreptunghi cu lungimea 5 și lățimea 3
+        // Crearea unui obiect de tip dreptunghi cu lungimea 6 și lățimea 4
       Parallelogram parallelogram = new Parallelogram();
       int legth = 6 ;
       int width = 4;
