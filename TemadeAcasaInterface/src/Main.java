@@ -1,13 +1,16 @@
 public class Main {
     public static void main(String[] args) {
 
-        Elefant elefant = new Elefant();
-        elefant.sunet();
-        elefant.eat();
-        elefant.alearga();
-        int virstaMaxima = Animal.virstaMax();
-        System.out.println("Virsta maxima a animalului este " + virstaMaxima);
 
 
+            ElefantErbivor elefantErbivor = new ElefantErbivor(" Dumbo");
+            elefantErbivor.afiseazaNume();
+            elefantErbivor.manincaPlante();
+            elefantErbivor.sunet();
+            elefantErbivor.eat();
+            elefantErbivor.alearga();
+            int varstaMaxima = Animal.virstaMax();
+            System.out.println("Vârsta maximă a animalului este " + varstaMaxima);
+
+        }
     }
-}

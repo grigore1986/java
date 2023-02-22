@@ -1,4 +1,4 @@
-public abstract class Erbivor extends Elefant implements Animal {
+public abstract class Erbivor implements Animal  {
     // definim o variabilă privată pentru numele erbivorului
     private String nume;
 
