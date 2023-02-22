@@ -1,15 +1,12 @@
 public interface Animal {
-    void eat();
-
-    void sunet();
-
-    // metoda statică care returnează varsta maximă a unui animal
-    static int virstaMax() {
-        return 100;
+    String getNume();
+    void setNume(String nume);
+    void mananca();
+    void alearga();
+    default void doarme() {
+        System.out.println("Animalul doarme.");
     }
-
-    // metoda default pentru a afișa că animalul aleargă
-    default void alearga() {
-        System.out.println("El alearga");
+    static int varstaMaxima() {
+        return 100;
     }
 }

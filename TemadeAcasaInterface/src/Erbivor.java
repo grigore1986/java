@@ -1,18 +1,13 @@
-public abstract class Erbivor implements Animal  {
-    // definim o variabilă privată pentru numele erbivorului
-    private String nume;
+public abstract class Erbivor implements Animal {
+    protected int greutate;
 
-    // definim un constructor pentru a seta numele erbivorului
-    public Erbivor(String nume) {
-
-        this.nume = nume;
+    public void setGreutate(int greutate) {
+        this.greutate = greutate;
     }
 
-    // definim o metodă cu corp de metodă pentru a afișa numele erbivorului
-    public void afiseazaNume() {
-        System.out.println("Numele erbivorului este" + nume);
+    public void afiseazaGreutate() {
+        System.out.println("Greutatea este " + greutate + " kg.");
     }
 
-    // definim o metodă abstractă pentru a specifica ce plante mănâncă erbivorul
-    public abstract void manincaPlante();
+    public abstract void manancaPlante();
 }

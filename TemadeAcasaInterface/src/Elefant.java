@@ -1,15 +1,28 @@
 public class Elefant implements Animal {
 
-    // implementăm metodele definite în interfața Animal
-    @Override
-    public void eat() {
-        System.out.println("Elefantul maninca iarba si frunze");
+    private String nume;
+
+    public Elefant(String nume) {
+        this.nume = nume;
     }
 
     @Override
-    public void sunet() {
-        System.out.println("Elefantul scoate sunete puternice");
+    public String getNume() {
+        return nume;
     }
 
+    @Override
+    public void setNume(String nume) {
+        this.nume = nume;
+    }
 
+    @Override
+    public void mananca() {
+        System.out.println("Elefantul mananca iarba si frunze.");
+    }
+
+    @Override
+    public void alearga() {
+        System.out.println("Elefantul alearga in padure.");
+    }
 }
