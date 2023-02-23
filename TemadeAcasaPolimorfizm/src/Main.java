@@ -5,7 +5,7 @@ public class Main {
         System.out.println("Culoarea lui este "+ Color.Albastru);
 
         Circle circle = new Circle();
-        circle.name();
+        System.out.println(circle.name());
         System.out.println("Culoarea lui este "+Color.Rosu);
 
         Shape shape = new Square();

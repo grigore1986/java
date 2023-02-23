@@ -1,7 +1,8 @@
 public class Shape {
 
-    public void name (){
+    public String name (){
         System.out.println();
+        return null;
     }
 
 }
