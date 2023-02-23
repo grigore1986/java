@@ -1,2 +1,7 @@
-package PACKAGE_NAME;public class Polygon {
+public class Polygon extends  Shape{
+
+    @Override
+    public void name() {
+        System.out.println("Polygon");
+    }
 }

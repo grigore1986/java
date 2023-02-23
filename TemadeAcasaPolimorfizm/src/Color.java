@@ -1,2 +1,2 @@
-package PACKAGE_NAME;public enum Color {
+public enum Color { Rosu, Verde, Galben , Violet, Portocaliu, Albastru
 }
