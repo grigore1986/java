@@ -5,18 +5,24 @@ public class Main {
         System.out.println("Culoarea lui este "+ Color.Albastru);
 
         Circle circle = new Circle();
-        System.out.println(circle.name());
+         circle.name();
         System.out.println("Culoarea lui este "+Color.Rosu);
 
-        Shape shape = new Square();
-       shape.name();
+        Shape squareShape = new Square();
+       squareShape.name();
         System.out.println("Culoarea lui este " +Color.Verde);
 
-        Circle square1 = new Square();
-        square1.name();
+       Shape circleShape =  new Circle();
+       circleShape.name();
         System.out.println("Culoarea lui este " +Color.Galben);
 
 
 
     }
 }
+
+
+
+
+
+

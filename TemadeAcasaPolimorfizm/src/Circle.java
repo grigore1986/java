@@ -1,7 +1,9 @@
-public class Circle extends  Shape{
+public class Circle extends Shape {
 
     @Override
     public String name() {
-       return "Circle";
+        System.out.println("Circle");
+        return null;
     }
 }
+
