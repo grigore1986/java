@@ -18,5 +18,10 @@ public class Outer {
         public static void main(String[] args) {
             Outer outer = new Outer();
             outer.callInner();
+
+              //   Outer outer2 = new Outer();
+              //   Inner inner = outer2.new Inner(); // creză inner class (a doua metoda de chemare)
+              //   inner.go();
+
         }
     }
