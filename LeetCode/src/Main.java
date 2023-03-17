@@ -1,7 +1,8 @@
 
+
 //Se definește o clasă numită "Main" care va conține metoda "addTwoNumbers"
 //ce va efectua adunarea a două numere reprezentate ca liste înlănțuite.
-public class Main {
+public class Main extends ListNode{
         public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
             ListNode dummy = new ListNode(0); // creați un nod fictiv
             ListNode current = dummy; // setați nodul curent la nodul fictiv
