@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public interface Info {
+public interface Info {
+    public  void showInfo();
 }

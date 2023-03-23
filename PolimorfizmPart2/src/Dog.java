@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public class Dog {
+public class Dog extends Animal{
+    @Override
+    public void sleep() {
+        super.sleep();
+    }
 }
