@@ -72,10 +72,12 @@ public class Employee {
     }
     // metode care verifică dacă un angajat îndeplinește criteriile pentru a putea conduce interviul
     public boolean isCanLeadInterviews() {
-         return department.equals("Manadement") || department.equals("Software");
+
+         return department.equals("Management") || department.equals("Software");
     }
     // metoda care verifica daca participa la training-uri, în funcție de departament și vârstă.
     public boolean isCanAttendTraining() {
+
          return  department.equals("Software") && age >= 18;
     }
 }
