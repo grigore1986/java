@@ -16,8 +16,8 @@ public class BibilotecaGenerica<T> {
         return listaMedia;
     }
     // Metoda "afisareaMedia" este utilizată pentru a afișa informațiile despre toate elementele din listaMedia
-    public  void afisareaMedia(){
-        for(int i = 0; i < listaMedia.size(); i++) {
+    public void afisareaMedia() {
+        for (int i = 0; i < listaMedia.size(); i++) {
             T media = listaMedia.get(i);
             System.out.println(media);
         }

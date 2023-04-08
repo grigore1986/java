@@ -8,5 +8,12 @@ public class Main {
        biblioteca.afisareContinutCarti();
        biblioteca.afisareContinutZiar();
        biblioteca.afisareContinutVideo();
+
+       BibilotecaGenerica<Carte>bibilotecaGenerica = new BibilotecaGenerica<>();
+       bibilotecaGenerica.addMedia(new Carte("Cartea doi"));
+      bibilotecaGenerica.afisareaMedia();
+
+
+
     }
 }
