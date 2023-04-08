@@ -10,7 +10,13 @@ public class Main {
         } catch (InvalidNameException | InvalidAgeException e) {
            e.printStackTrace();
         }
-
+        try {
+            DivisibleBy7Counter counter = new DivisibleBy7Counter();
+            int count = counter.countDivisibleBy7Numbers(10, 50);
+            System.out.println("Numerele divizibile cu 7 din intervalul dat sunt: " + count);
+        } catch (InvalidRangeException e) {
+            e.printStackTrace();
+        }
+    }
 
     }
-}
