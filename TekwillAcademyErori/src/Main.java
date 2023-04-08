@@ -10,7 +10,7 @@ public class Main {
         } catch (InvalidNameException | InvalidAgeException e) {
            e.printStackTrace();
         }
-      
+
 
     }
 }
