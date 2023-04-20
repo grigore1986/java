@@ -9,7 +9,7 @@ public class PrintareaListei<T> implements Runnable{
     public void run() {
         for(T cuvint : list){
             try {
-                Thread.sleep(1000);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
