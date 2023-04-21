@@ -5,14 +5,20 @@ public class PrintareaListei<T> implements Runnable{
     public PrintareaListei(List<T>list){
         this.list = list;
     }
+
+    @Override
+    public String toString() {
+        return "Lista de printare este: "+ list;
+    }
+
     @Override
     public void run() {
         for(T cuvint : list){
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
+//            try {
+//                Thread.sleep(2000);
+//            } catch (InterruptedException e) {
+//                throw new RuntimeException(e);
+//            }
             System.out.println(cuvint);
         }
 
