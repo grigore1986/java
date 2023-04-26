@@ -26,17 +26,23 @@ public class Main {
         for (Animale animal : animals) {
             // Cream o sarcina (task) de alimentare pentru fiecare animal prin lambda
             Runnable task = () -> {
+
                 System.out.println("Animalul " + animal.getNume() + " a fost hranit cu " + animal.getFood());
             };
-            // Programam ca fie executata la fiecare 3 minute, incepand cu minutul zeru
-            executorService.scheduleAtFixedRate(task, 0, 3, TimeUnit.MINUTES);
-            // Asteptam 10 min ca taskurile sa se finalizaze
-            executorService.shutdown();
-            try{
-                executorService.awaitTermination(10,TimeUnit.MINUTES);
+            try {
+                Thread.sleep(1000 );
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
+          // Programam ca fie executata la fiecare 3 minute, incepand cu minutul zeru
+           executorService.scheduleAtFixedRate(task, 0, 3, TimeUnit.MINUTES);
+//            // Asteptam 10 min ca taskurile sa se finalizaze
+//            executorService.shutdown();
+//            try{
+//                executorService.awaitTermination(10,TimeUnit.MINUTES);
+//            } catch (InterruptedException e) {
+//                throw new RuntimeException(e);
+//            }
         }
 
     }
