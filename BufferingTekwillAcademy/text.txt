@@ -1,0 +1,4 @@
+Textul 1
+Textul 2
+Textul 3
+Textul 4
