@@ -8,6 +8,7 @@ public class Main {
         String file = "text.txt";
         // Punctul 1: Creați fișierul și adăugați textele, fiecare pe un rând nou
         try(BufferedWriter writer = new BufferedWriter(new FileWriter(file))){
+            // Adăugăm textele în fișier
             writer.write("Textul 1");
             writer.newLine();
             writer.write("Textul 2");
@@ -22,6 +23,7 @@ public class Main {
         // Punctul 2: Utilizați fluxurile pentru a citi textul din fișier
         try(BufferedReader reader = new BufferedReader(new FileReader(file))){
             String line;
+            // Citim și afișăm fiecare linie din fișier
             while((line = reader.readLine()) !=null){
                 System.out.println(line);
             }
@@ -31,6 +33,7 @@ public class Main {
         // Punctul 3: Utilizați buffer la citire
         try(BufferedReader reader = new BufferedReader(new FileReader(file))){
             String line1;
+            // Citim fiecare linie din fișier și o adăugăm la conținutul StringBuilder
             StringBuilder content = new StringBuilder();
             while ((line1 = reader.readLine()) != null){
                 content.append(line1).append("\n");
@@ -43,6 +46,7 @@ public class Main {
         List<String> textList = new ArrayList<>();
         try(BufferedReader reader = new BufferedReader(new FileReader(file))){
             String list;
+            // Citim fiecare linie din fișier și o adăugăm în lista de texte
             while ((list = reader.readLine()) != null){
                 textList.add(list);
             }
@@ -54,6 +58,7 @@ public class Main {
         // Punctul 5: Modificați textele pentru a fi cu litere mari
         List<String>upperCaseTextList = new ArrayList<>();
         for(String text : textList) {
+            // Convertim fiecare text la litere mari și le adăugăm în lista de texte cu litere mari
             String upperCaseText = text.toUpperCase();
             upperCaseTextList.add(upperCaseText);
         }
@@ -62,6 +67,7 @@ public class Main {
         // Punctul 6: Scrieți conținutul listei într-un fișier folosind buffer și flux
         String outFilePath = "text_uppercase.txt";
         try(BufferedWriter upWrite = new BufferedWriter(new FileWriter(outFilePath))){
+            // Scriem fiecare text cu litere mari în fișier, fiecare pe un rând nou
             for (String text : upperCaseTextList) {
                upWrite.write(text);
                upWrite.newLine();
